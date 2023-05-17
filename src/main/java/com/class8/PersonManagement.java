@@ -8,7 +8,7 @@ import org.example.Main;
 import java.sql.*;
 
 public class PersonManagement {
-    final static Logger logger = Logger.getLogger(Main.class);
+    final static Logger logger = Logger.getLogger(PersonManagement.class);
 
     private static void logInfoString(String message) {
         logger.info("This is info : " + message);
@@ -16,6 +16,7 @@ public class PersonManagement {
 
     private static void logWarningString(String message) {
         logger.warn("This is warn : " + message);
+
     }
     public void addNewPerson(Person person) throws Exception {
         try {
